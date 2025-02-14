@@ -1,0 +1,52 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.home input {
+  width: 300px;
+  padding: 10px;
+  border-bottom: 2px solid;
+  outline: none;
+}
+
+.home button {
+  padding: 10px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  border: none;
+}
+
+ul {
+  list-style: none;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.liDiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+li {
+  background-color: gray;
+  color: white;
+  width: 70%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.btns {
+    display: flex;
+    gap: 1rem;
+}
