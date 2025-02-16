@@ -1,8 +1,8 @@
-
 import { useEffect, useState } from "react";
 import "./home.css";
 import API_URL from "./apiConnection";
 import axios from "axios";
+import toast from "react-hot-toast";
 
 export default function Home() {
   const [todos, setTodos] = useState([]);
@@ -30,7 +30,7 @@ export default function Home() {
 
   const handleAdd = () => {
     if (!newTodo.trim()) {
-      alert("Todo cannot be empty!");
+      toast.error("Todo cannot be empty!");
       return;
     }
 
@@ -96,7 +96,7 @@ export default function Home() {
         onChange={handleInputChange}
       />
       <button type="button" onClick={handleAdd}>
-        Add
+        Add Todo
       </button>
 
       {todos.length === 0 ? (
